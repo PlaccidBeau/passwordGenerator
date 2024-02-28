@@ -36,7 +36,8 @@ private
   def createPassword
     print "Enter login email/username:"
     login = gets.chomp
-    print "Enter character length (6 or more): "
+    # print "Enter character length (6 or more): "
+    print "Enter a number you want the password length to be (6 or more): "
     password = gets.chomp.to_i
     if password >= 6
       randomSymbol = ['!','@','#','$','%','&','*'].sample
