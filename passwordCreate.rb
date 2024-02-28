@@ -46,7 +46,8 @@ private
       password = (0..password - 2).map { randomCharacters[rand(randomCharacters.length)]}.join + randomSymbol
       @password << Passwordbody.new(login, password)
       pp "[username: #{login} - password: #{password}]"
-    else pp "Password must be 6 characters or longer. Try again"
+    else pp "Please enter a number (6 or more). Try again"
+    # else pp "Password must be 6 characters or longer. Try again"
     end
   end
 
